@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="AWAS FRESKAS: jamaica, limón y tamarindo con una personalidad inesperada. Descubre nuestros sabores y explora el laboratorio web.">
+  <meta name="theme-color" content="#592600">
+  <title>AWAS FRESKAS | Freskura con personalidad</title>
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/home.css">
+  <script src="assets/vendor/jquery-4.0.0.min.js" defer></script>
+  <script src="assets/app.js" defer></script>
+  <script src="assets/home.js" defer></script>
+</head>
+<body class="home">
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header>
+    <div class="headerinner">
+      <a class="brand" href="index.html" aria-label="AWAS FRESKAS, inicio"><img src="assets/logo.png" alt="AWAS FRESKAS" width="1376" height="1152"></a>
+      <button class="menubtn" aria-expanded="false" aria-controls="nav" type="button">Menú</button>
+      <nav id="nav" aria-label="Principal">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="javascript.html">JavaScript</a>
+        <a href="jquery.html">jQuery</a>
+        <a href="json.html">JSON</a>
+        <a href="hosting.html">Hosting y dominios</a>
+        <a href="cuestionario.html">Cuestionario Web</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="homehero" aria-labelledby="hero-title">
+      <div class="herotext">
+        <p class="eyebrow">TRES BEBIDAS. UNA PERSONALIDAD INESPERADA.</p>
+        <h1 id="hero-title">La freskura<br>tiene sus<br><em>propios planes.</em></h1>
+        <p class="herolead">Parece una cosa. Sabe a otra.<br>Y se llama como le da la gana.</p>
+        <p class="herodetail">Jamaica, limón y tamarindo: tres refrescos que convierten cada sorbo en una pequeña sorpresa.</p>
+        <div class="actions">
+          <a class="button" href="#bebidas">Descubre los sabores</a>
+          <a class="textlink" href="#laboratorio">Explora el laboratorio</a>
+        </div>
+        <div class="herobottom"><span>JAMAICA</span><span>LIMÓN</span><span>TAMARINDO</span></div>
+      </div>
+      <figure class="herovisual">
+        <img class="drinkphoto" src="assets/bebidas-hero.webp" alt="Tres vasos con hielo y bebidas de apariencia verde limón, marrón tamarindo y rojo jamaica" width="1536" height="1024" fetchpriority="high">
+        <figcaption class="photocaption"><span>LA COLECCIÓN</span><b>El sabor no siempre<br>es lo que parece.</b></figcaption>
+        <div class="photoindex" aria-hidden="true">01 / 03</div>
+      </figure>
+    </section>
+    <section class="tastebar" aria-label="Explora las descripciones de las bebidas">
+      <div class="tasteintro"><span class="eyebrow">ELIGE UNA BEBIDA</span><p>Confía en el sabor.<br>O en tu curiosidad.</p></div>
+      <div class="tasteswitch" role="group" aria-label="Bebidas">
+        <button type="button" data-drink="jamaica" aria-pressed="true"><span class="colordot red" aria-hidden="true"></span>Jamaica</button>
+        <button type="button" data-drink="limon" aria-pressed="false"><span class="colordot green" aria-hidden="true"></span>Limón</button>
+        <button type="button" data-drink="tamarindo" aria-pressed="false"><span class="colordot brown" aria-hidden="true"></span>Tamarindo</button>
+      </div>
+      <p id="selected-description" aria-live="polite">La que parece de limón es de jamaica, pero sabe a tamarindo.</p>
+    </section>
+    <section class="homesection collection" id="bebidas" aria-labelledby="collection-title">
+      <div class="sectionhead">
+        <div><p class="eyebrow">01 / NUESTRA COLECCIÓN</p><h2 id="collection-title">Tres refrescos.<br><em>Cero acuerdos.</em></h2></div>
+        <p>El nombre, la apariencia y el sabor tienen su propia versión de la historia. Tú decides con cuál te quedas.</p>
+      </div>
+      <div class="productgrid">
+        <article class="productcard product-jamaica">
+          <div class="producthead"><span>01 / JAMAICA</span><span class="colordot red" aria-hidden="true"></span></div>
+          <p class="productline">La vista pidió limón.<br>El sabor tenía otros planes.</p>
+          <h3>Jamaica<span class="productperiod">.</span></h3>
+          <p class="productdescription">La que parece de limón es de jamaica, pero sabe a tamarindo.</p>
+          <dl><div><dt>Parece de</dt><dd>Limón</dd></div><div><dt>Sabe a</dt><dd>Tamarindo</dd></div></dl>
+          <p class="productfoot">Una sorpresa desde el primer sorbo.</p>
+        </article>
+        <article class="productcard product-limon">
+          <div class="producthead"><span>02 / LIMÓN</span><span class="colordot green" aria-hidden="true"></span></div>
+          <p class="productline">Tus ojos dicen tamarindo.<br>Tu paladar pide otra opinión.</p>
+          <h3>Limón<span class="productperiod">.</span></h3>
+          <p class="productdescription">La que parece de tamarindo es de limón, pero sabe a jamaica.</p>
+          <dl><div><dt>Parece de</dt><dd>Tamarindo</dd></div><div><dt>Sabe a</dt><dd>Jamaica</dd></div></dl>
+          <p class="productfoot">Para quien disfruta cambiar de idea.</p>
+        </article>
+        <article class="productcard product-tamarindo">
+          <div class="producthead"><span>03 / TAMARINDO</span><span class="colordot brown" aria-hidden="true"></span></div>
+          <p class="productline">El nombre se queda.<br>El sabor hace lo que quiere.</p>
+          <h3>Tamarindo<span class="productperiod">.</span></h3>
+          <p class="productdescription">La que parece de jamaica es de tamarindo, pero sabe a limón.</p>
+          <dl><div><dt>Parece de</dt><dd>Jamaica</dd></div><div><dt>Sabe a</dt><dd>Limón</dd></div></dl>
+          <p class="productfoot">La curiosidad también se bebe.</p>
+        </article>
+      </div>
+    </section>
+    <section class="brandstory homesection" aria-labelledby="brand-title">
+      <div class="storyvisual"><span class="eyebrow">02 / NUESTRA IDENTIDAD</span><img src="assets/logo.png" alt="Imagotipo AWAS FRESKAS" width="1376" height="1152" loading="lazy"><p>Un símbolo.<br>Tres formas de ser freskos.</p></div>
+      <div class="storycopy"><p class="eyebrow">AWAS FRESKAS</p><h2 id="brand-title">Una marca que<br>deja <em>conversación.</em></h2><p class="storylead">Nos gusta la freskura. Y también darle un giro a lo que esperabas.</p><p>AWAS FRESKAS es una línea conceptual de refrescos de jamaica, limón y tamarindo con una identidad compartida y descripciones que juegan con el nombre, la apariencia y el sabor.</p><dl class="brandfacts"><div><dt>Para quién</dt><dd>Jóvenes, estudiantes y familias que disfrutan las bebidas refrescantes y las marcas con humor.</dd></div><div><dt>Qué nos distingue</dt><dd>Tres bebidas memorables que convierten una elección cotidiana en una experiencia divertida.</dd></div><div><dt>El imagotipo</dt><dd>Tres gotas y un nombre. El emblema y el texto pueden utilizarse de manera independiente.</dd></div></dl></div>
+    </section>
+    <section class="palette homesection" aria-labelledby="palette-title">
+      <div class="sectionhead"><div><p class="eyebrow">LOS COLORES DE LA MARCA</p><h2 id="palette-title">La personalidad<br>también <em>se ve.</em></h2></div><p>Una paleta que reúne la energía de la jamaica, la vitalidad del limón y la calidez del tamarindo.</p></div>
+      <div class="palettegrid"><article class="palettecard red"><span>01 / JAMAICA</span><h3>Energía.</h3><p>Un rojo expresivo que despierta la curiosidad.</p><b>#B90032</b></article><article class="palettecard green"><span>02 / LIMÓN</span><h3>Frescura.</h3><p>Un verde vivo que transmite vitalidad.</p><b>#78A900</b></article><article class="palettecard brown"><span>03 / TAMARINDO</span><h3>Calidez.</h3><p>Un marrón profundo que aporta cercanía y equilibrio.</p><b>#592600</b></article></div>
+      <p class="palettenote">Estas asociaciones orientan la identidad visual y pueden variar según la cultura y el contexto. El blanco ofrece espacio y claridad para leer.</p>
+    </section>
+    <section class="homelab homesection" id="laboratorio" aria-labelledby="lab-title">
+      <div class="sectionhead"><div><p class="eyebrow">03 / LABORATORIO WEB</p><h2 id="lab-title">Del primer sorbo<br>al primer <em>clic.</em></h2></div><p>Descubre la tecnología detrás de una página, experimenta con ejemplos y comprueba lo que aprendiste.</p></div>
+      <div class="labgrid">
+        <a class="labcard" href="javascript.html"><span>01 / COMPORTAMIENTO</span><h3>JavaScript</h3><p>Variables, funciones y eventos que dan vida a una página.</p><b>Explorar JavaScript</b></a>
+        <a class="labcard" href="jquery.html"><span>02 / INTERACCIÓN</span><h3>jQuery</h3><p>Compara la sintaxis y prueba efectos con la librería.</p><b>Explorar jQuery</b></a>
+        <a class="labcard" href="json.html"><span>03 / DATOS</span><h3>JSON</h3><p>Entiende cómo los datos se convierten en texto y viajan.</p><b>Explorar JSON</b></a>
+        <a class="labcard" href="hosting.html"><span>04 / PUBLICACIÓN</span><h3>Hosting<br>y dominios</h3><p>Conoce el camino que lleva un proyecto a internet.</p><b>Explorar publicación</b></a>
+      </div>
+      <div class="homequiz"><div><p class="eyebrow">TU TURNO</p><h3>¿Qué tan freskos<br>están tus conocimientos?</h3><p>10 preguntas. Explicaciones al terminar.<br>Todas las oportunidades que necesites.</p></div><a class="button" href="cuestionario.html">Abrir Cuestionario Web</a></div>
+    </section>
+  </main>
+  <footer class="homefooter"><div><strong>AWAS FRESKAS</strong><span>Tres sabores. Una identidad propia.</span></div><p>Proyecto educativo · Marca conceptual · 2026</p><a href="#bebidas">Volver a los sabores</a></footer>
+  <noscript><p class="notice">Activa JavaScript para usar el selector de bebidas y las demostraciones. El contenido de las páginas sigue disponible.</p></noscript>
+</body>
+</html>

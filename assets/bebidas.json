@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nombre": "Jamaica",
+    "parece": "Limón",
+    "sabe": "Tamarindo",
+    "color": "#B90032",
+    "descripcion": "La que parece de limón es de jamaica, pero sabe a tamarindo."
+  },
+  {
+    "id": 2,
+    "nombre": "Limón",
+    "parece": "Tamarindo",
+    "sabe": "Jamaica",
+    "color": "#78A900",
+    "descripcion": "La que parece de tamarindo es de limón, pero sabe a jamaica."
+  },
+  {
+    "id": 3,
+    "nombre": "Tamarindo",
+    "parece": "Jamaica",
+    "sabe": "Limón",
+    "color": "#592600",
+    "descripcion": "La que parece de jamaica es de tamarindo, pero sabe a limón."
+  }
+]
